@@ -1,0 +1,23 @@
+# 프로젝트명: XAI(eXplanable AI) 실습 1 (Partial Dependence Plot - PDP)
+
+#### 시각화 vs XAI의 차이
+
+- XAI는 모델이 `왜 이런 결과를 선택했는지 해석`할 수 있게 해주므로, 일반적인 시각화랑은 다릅니다.
+
+#### 🚨 주의사항
+- XAI 기법은 모델의 예측값을 설명하기 위한 것이므로, 현상 자체를 설명하는 것이 아닙니다. (물리법칙, 타 도메인 법칙들)
+- 원인과 결과를 나타내는 인과추론이 아니라, 상관관계에 가깝기 때문에 인과추론을 위해선 해당 도메인 지식이 반드시 필요합니다.
+
+### 1. 일반적인 모델 결과 해석방법 (XGBoost)
+
+#### 실습 데이터 : 피마 인디언 당뇨병 분류 모델
+
+- [X] Pregnancies: 임신 횟수
+- [X] Glucose: 포도당 부하 검사 수치
+- [X] BloodPressure: 혈압(mm Hg)
+- [X] SkinThickness: 팔 삼두근 뒤쪽의 피하지방 측정값(mm)
+- [X] Insulin: 혈청 인슐린(mu U/ml)
+- [X] BMI: 체질량지수(체중(kg)/키(m))^2
+- [X] DiabetesPedigreeFunction: 당뇨 내력 가중치 값
+- [X] Age: 나이
+- [Y] Outcome: 클래스 결정 값(0 또는 1)
